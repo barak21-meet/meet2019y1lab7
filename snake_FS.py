@@ -6,8 +6,8 @@ turtle.bgcolor("black")
 
 turtle.tracer(1,0) #This helps the turtle move more smoothly
 
-SIZE_X=800
-SIZE_Y=500
+SIZE_X=1895
+SIZE_Y=1045
 turtle.setup(SIZE_X, SIZE_Y) #Curious? It's the turtle window  
                              #size.    
 turtle.penup()
@@ -70,10 +70,10 @@ def remove_tail():
 
 snake.direction = "Up"
 
-UP_EDGE = 250
-DOWN_EDGE = -250
-RIGHT_EDGE = 400
-LEFT_EDGE = -400
+UP_EDGE = 520
+DOWN_EDGE = -520
+RIGHT_EDGE = 915
+LEFT_EDGE = -915
 
 
 def up():
@@ -109,13 +109,13 @@ turtle.onkeypress(right, "Right")
 
 turtle.listen()
 
-turtle.register_shape("l2.gif") #Add trash picture
+turtle.register_shape("trash.gif") #Add trash picture
                       # Make sure you have downloaded this shape 
                       # from the Google Drive folder and saved it
                       # in the same folder as this Python script
 
 food = turtle.clone()
-food.shape("l2.gif")
+food.shape("trash.gif")
 
 
 #Locations of food
@@ -257,4 +257,3 @@ move_snake()
 
 
 turtle.mainloop()
-
